@@ -1,0 +1,27 @@
+<html>
+<head>
+	<title>noob</title>
+</head>
+<body>
+
+	text here: <input type="text" id='k'>
+	<p id='text'></p>
+
+<script type="text/javascript">
+
+var elem = document.getElementById('text');
+var elem2 = document.getElementById('k');
+
+addEventListener('keypress', function(event) {
+
+console.log(typeof(event.charCode));
+elem.innerHTML += String.fromCharCode(event.charCode);
+
+elem2.value = "";
+});
+
+
+
+</script>
+</body>
+</html>
